@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* =========================================
+   ELLE 'N' ELLE GYM - GLOBAL STYLES
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   CONTINUOUS FEEDBACK MARQUEE
+========================================= */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Prevent horizontal scrolling caused by
+   the moving feedback cards */
+body {
+  overflow-x: hidden;
+}
