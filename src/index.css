@@ -15,10 +15,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* =========================================
-   CONTINUOUS FEEDBACK MARQUEE
-========================================= */
-
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -29,12 +25,45 @@ body {
   }
 }
 
-.animate-marquee {
-  animation: marquee 30s linear infinite;
+@keyframes marqueeReverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
-/* Prevent horizontal scrolling caused by
-   the moving feedback cards */
-body {
-  overflow-x: hidden;
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marqueeReverse 35s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Moving gym image gallery */
+
+@keyframes gymGallery {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-gym-gallery {
+  animation: gymGallery 28s linear infinite;
+}
+
+.animate-gym-gallery:hover {
+  animation-play-state: paused;
 }

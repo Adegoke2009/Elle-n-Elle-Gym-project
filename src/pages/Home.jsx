@@ -11,7 +11,7 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover opacity-40"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent" />
 
         <div className="relative mx-auto w-full max-w-7xl px-6 py-24">
           <p className="mb-4 font-semibold uppercase tracking-[0.3em] text-green-400">
